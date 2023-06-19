@@ -1,0 +1,58 @@
+header {
+    height: 820px;
+    background-image: url(../img/barbershopbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+header h2 {
+    width: 1300px;
+    display: flex;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 32px;
+    color: #dbae79;
+}
+
+header p {
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 24px;
+    color: #dbae79;
+}
+
+button {
+    width: 210px;
+    height: 65px;
+    background-color:#8f6837 ;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    width: 235px;
+    height: 80px;
+    font-size: 20px;
+}
+
+button:active{
+    width: 210px;
+    height: 65px;
+    font-size: 18px;
+}

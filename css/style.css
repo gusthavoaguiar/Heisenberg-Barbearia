@@ -1,4 +1,8 @@
 @import "nav.css";
+@import "header.css";
+@import "sobre.css";
+@import "services.css";
+@import "footer.css";
 
 * {
     margin: 0;

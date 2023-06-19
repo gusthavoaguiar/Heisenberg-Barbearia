@@ -1,0 +1,89 @@
+.sobre {
+    margin: 0px 104px 104px 104px;
+    height: 700px;
+    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "sobre-title sobre-title"
+                         "sobre-box-1 sobre-box-img"
+                         "sobre-box-2 sobre-box-img"
+                         "sobre-box-3 sobre-box-img"
+                         "sobre-box-4 sobre-box-img";
+}
+
+.sobre-color {height: 800px;
+    background-color: #EEEEEE;
+}
+
+.sobre-title {
+    margin-top: 88px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    grid-area: sobre-title;
+}
+
+.sobre-title h2 {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 32px;
+    color: #dbae79;
+}
+
+.sobre-box-1 {
+    grid-area: sobre-box-1;
+}
+
+.sobre-box-1 p {
+    width: 700px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    color: #dbae79;
+}
+
+.sobre-box-2 {
+    grid-area: sobre-box-2;
+}
+
+.sobre-box-2 p {
+    width: 700px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    color: #dbae79;
+}
+
+.sobre-box-3 {
+    grid-area: sobre-box-3;
+}
+
+.sobre-box-3 p {
+    width: 700px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    color: #dbae79;
+}
+
+.sobre-box-4 {
+    grid-area: sobre-box-4;
+}
+
+.sobre-box-4 p {
+    width: 700px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    color: #dbae79;
+}
+
+.sobre-box-img {
+    grid-area: sobre-box-img;
+}
+
+.sobre-box-img img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px;
+}

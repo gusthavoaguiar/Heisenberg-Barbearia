@@ -1,13 +1,15 @@
 nav {
+    width: 100%;
     height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #2a5753;
+    background-color: #1e5f5b;
+    position: fixed;
 }
 
 .logo {
-    width: 225px;    
+    width: 225px; 
 }
 
 ul {
@@ -15,21 +17,43 @@ ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    gap: 32px;
 }
 
 a {
-    margin-right: 24px;
     font-size: 20px;
+    text-decoration: none;
     font-family: Inter;
-    color: #c0773a;
+    color: #dbae79;
+    transition: all 0.3s;
 }
 
-button {
+a:hover {
+    text-decoration: underline;
+    color: #8f6837;
+}
+
+.agende-nav {
     width: 175px;
-    height: 50px;
-    background-color:#c0773a ;
+    height: 45px;
+    background-color:#8f6837 ;
     font-size: 16px;
+    font-weight: 700;
     color: white;
     border-radius: 8px;
     border: none;
+    transition: all 0.3s;
+}
+
+.agende-nav:hover {
+    cursor: pointer;
+    width: 190px;
+    height: 55px;
+    font-size: 18px;
+}
+
+.agende-nav:active{
+    width: 175px;
+    height: 45px;
+    font-size: 16px;
 }

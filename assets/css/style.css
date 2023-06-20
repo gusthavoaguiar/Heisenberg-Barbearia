@@ -3,6 +3,8 @@
 @import "sobre.css";
 @import "services.css";
 @import "footer.css";
+@import "customers.css";
+@import "team.css";
 
 * {
     margin: 0;

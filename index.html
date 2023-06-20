@@ -17,6 +17,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#services">Serviços</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#customers">Clientes</a></li>
             <li><a href="#contacts">Contatos</a></li>
         </ul>
         <button class="agende-nav">Agende seu horário!</button>
@@ -24,7 +26,7 @@
     <header id="home">
         <h2>Cada pessoa é única e tem sua própria personalidade e estilo, por isso merece um cuidado especial e personalizado</h2>
         <p>É nisso que a Walter White Barbearia acredita, por isso, além de cuidar de sua estética de forma muito atenciosa, nosso compromisso é oferecer um atendimento excepcional, produtos de qualidade e um ambiente acolhedor para que você saia daqui se sentindo renovado, confiante e com um visual impecável.</p>
-        <button>Agende seu horário!</button>
+        <button class="btn-agende">Agende seu horário!</button>
     </header>
     <main>
         <section id="sobre" class="sobre-color">
@@ -70,13 +72,68 @@
                 <p class="p-card">Entre cortes, acabamentos, e combos temos todos os serviços que você precisa.<br> Clique e saiba mais</p>
             </div>
         </section>
-        <button>Agende seu horário!</button>
+        <button class="btn-agende">Agende seu horário!</button>
+        </section>
+        <section class="team" id="team">
+            <h2>Equipe</h2>
+            <p class="team-subtitle">A equipe da nossa barbearia é composta por profissionais talentosos e experientes, dedicados a proporcionar cortes de cabelo e serviços impecáveis. Com habilidades afiadas e um senso de estilo refinado, eles garantem que cada cliente saia com um visual único e confiante. Estamos prontos para oferecer uma experiência excepcional de cuidados.</p>
+            <div class="barbers">
+                <div class="barber">
+                    <img class="walter" src="./assets/img/walterwhite.jpg" alt="walter">
+                    <p class="barber-p">Walter White</p>
+                </div>
+                <div class="barber">
+                    <img class="jesse" src="./assets/img/jessepinkman.jpg" alt="jesse">
+                    <p class="barber-p">Jesse Pinkman</p>
+                </div>
+                <div class="barber">
+                    <img class="jane" src="./assets/img/jane.jpg" alt="jane">
+                    <p class="barber-p">Jane Margolis</p>
+                </div>
+            </div>
+        </section>
+        <section class="customers" id="customers">
+            <h2>Clientes</h2>
+            <p class="customers-subtitle">Veja a opinião de quem já é cliente da Walter White Barbearia.</p>
+            <div class="container">
+                <button class="arrow-left control" aria-label="Previous Box">◀</button>
+                <button class="arrow-right control" aria-label="Next Box">▶</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                        <div class="item current-item">
+                            <img src="https://source.unsplash.com/random/50x50/?curly" alt="icon-customers">
+                            <div class="customers-name">
+                                <h3>Helena Reis</h3>
+                                <p><a href="https://www.instagram.com/gusthavo.aguiar/" class="customers-arroba">@helenareis</a></p>
+                            </div>
+                            <p class="customers-p">Excelente serviço, posso dizer que essa é a melhor barbearia de Osasco, desde o atendimento caloroso até o resultado final impecável, tudo foi perfeito. Recomendo fortemente esta barbearia a todos que buscam serviços de qualidade. Cabeleireiros experientes, preços justos e ambiente acolhedor e limpo. Recomendo sem hesitar.</p>
+                        </div>
+                        <div class="item current-item">
+                            <img src="https://source.unsplash.com/random/50x50/?woman" alt="icon-customers">
+                            <div class="customers-name">
+                                <h3>Larissa Matos</h3>
+                                <p><a href="https://www.instagram.com/gusthavo.aguiar/" class="customers-arroba">@lari.matos</a></p>
+                            </div>
+                            <p class="customers-p">Experiência excepcional recomendada por um amigo. Profissionais especializados, ambiente moderno e acolhedor. Serviços de alta qualidade, higiene impecável e preço justo. Recomendo vivamente esta barbearia.</p>
+                        </div>
+                        <div class="item current-item">
+                            <img src="https://source.unsplash.com/random/50x50/?man" alt="icon-customers">
+                            <div class="customers-name">
+                                <h3>Gabriel Andrade</h3>
+                                <p><a href="https://www.instagram.com/gusthavo.aguiar/" class="customers-arroba">@bieldiandrade</a></p> 
+                            </div>
+                            <p class="customers-p">Ambiente muito acolhedor, barbeiros profissionais e atentos aos detalhes. Serviços adicionais disponíveis, higiene impecável. Preços justos e excelente relação custo-benefício. Recomendo esta barbearia com entusiasmo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
 <footer id="contacts">
     <h2>Contatos</h2>
     <p class="footer-subtitle">Nossa barbearia fica localizada na região de Osasco, logo abaixo você encontra o endereço e todas as informações para contato.</p>
+    <div class="footer-line"></div>
     <section class="footer-cards">
         <div class="footer-box">
             <h3>Endereço</h3>
@@ -97,4 +154,5 @@
     <div class="footer-line"></div>
     <p class="footer-p">Walter White Barbearia 2023, desenvolvido por Gusthavo Aguiar</p>
 </footer>
+<script src="./assets/js/app.js"></script>
 </html>

@@ -32,7 +32,7 @@ header p {
     color: #dbae79;
 }
 
-button {
+.btn-agende {
     width: 210px;
     height: 65px;
     background-color:#8f6837 ;
@@ -44,14 +44,14 @@ button {
     transition: all 0.3s;
 }
 
-button:hover {
+.btn-agende:hover {
     cursor: pointer;
     width: 235px;
     height: 80px;
     font-size: 20px;
 }
 
-button:active{
+.btn-agende:active{
     width: 210px;
     height: 65px;
     font-size: 18px;

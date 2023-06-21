@@ -32,23 +32,89 @@
 }
 
 .service-card {
-    background-color: #1e5f5b;
-    border: 4px solid #dbae79;
+    margin-bottom: 15px;
+    background-color: #dbae79;
+    border: 4px solid #8f6837;
     border-radius: 20px;
     width: 375px;
+    overflow: hidden;
+    position: relative absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 15);
+    gap: 8px;
+    padding: 8px;
+}
+
+.service-card * {
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card:hover .service-card__body {
+    transform: translateY(-75px);
+}
+
+.service-card:hover .service-card__body .service-card__showOnHover {
+    overflow: initial;
+    height: 100px;
+    max-height: 100px;
+    transform: translateY(75px);
+}
+
+.service-card__header {
     height: 375px;
-    position: relative;
+    background-color: #1e5f5b;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 20px;
     gap: 8px;
-    padding: 8px;
-    position: static;
-    transition: all 0.3s;
 }
 
-.service-card h3 {
+.service-card__showOnHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.5s ease-in-out;
+}
+
+.service-card__body {
+    width: 100%;
+    padding: 30px 30px 40px 30px;
+}
+
+.service-card__body-text {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 20px;
+    color: #8f6837;
+    transition: all .4s ease-in-out;
+}
+
+.service-card:hover .service-card__body-text {
+    opacity: 0;
+}
+
+.service-card__showOnHover h3 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 20px;
+    color: #8f6837;
+    text-align: center;
+}
+
+.service-card__showOnHover p {
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    color: #8f6837;
+}
+
+.service-card__header h3 {
     font-family: Inter;
     font-weight: 500;
     font-size: 20px;
@@ -67,18 +133,39 @@
     color: #dbae79;
 }
 
-.price-card {
-    width: 375px;
-    height: 375px;
-    display: ;
-    background-color: #dbae79;
-    transition: all 300ms ease-in-out;
+.btn-card, .btn-services {
+    width: 175px;
+    height: 45px;
+    background-color:#8f6837 ;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s;
 }
 
-.price-card:hover {
-    display: ;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.btn-card {
+    font-size: 14px;
 }
 
+.btn-card:hover, .btn-services:hover {
+    cursor: pointer;
+    width: 190px;
+    height: 55px;
+    font-size: 18px;
+}
+
+.btn-card:hover {
+    font-size: 16px;
+}
+
+.btn-card:active, .btn-services:active{
+    width: 175px;
+    height: 45px;
+    font-size: 16px;
+}
+
+.btn-card:active {
+    font-size: 14px;
+}
